@@ -76,3 +76,14 @@ The project is hosted on Render, and the exposed endpoint is available at:
 ```
 https://bitespeed-backend-7je6.onrender.com/
 ```
+
+### API Endpoint
+
+Endpoint: `/identify`
+
+Method: `POST`
+
+Request Body
+
+- `email`: A string representing the email of the customer.
+- `phoneNumber`: A string representing the phone number of the customer.
