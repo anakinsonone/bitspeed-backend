@@ -9,11 +9,6 @@ const prisma = new PrismaClient();
 
 app.use(bodyParser.json());
 
-app.get("/", async (req, res) => {
-  const response = "connected";
-  res.send(response);
-});
-
 app.post("/identify", async (req, res) => {
   const { email, phoneNumber } = req.body;
 
@@ -84,7 +79,7 @@ app.post("/identify", async (req, res) => {
       }
       if (contact.email && !emails.includes(contact.email))
         emails.push(contact.email);
-      if (contact.phoneNumber && !phoneNumber.includes(contact.phoneNumber))
+      if (contact.phoneNumber && !phoneNumbers.includes(contact.phoneNumber))
         phoneNumbers.push(contact.phoneNumber);
     }
 
