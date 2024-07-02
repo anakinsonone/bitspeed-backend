@@ -68,3 +68,11 @@ After building the project, you can start the server using:
 ```bash
 npm run start
 ```
+
+## Hosted Endpoint
+
+The project is hosted on Render, and the exposed endpoint is available at:
+
+```
+https://bitespeed-backend-7je6.onrender.com/
+```
